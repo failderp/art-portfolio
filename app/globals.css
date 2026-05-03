@@ -30,3 +30,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer utilities {
+  .border-texture {
+    border: 16px solid transparent;
+    border-image: url('/images/gallery/setup/kiwihug-MS9Tnh3if1o-unsplash.jpg') 32 round;
+  }
+}
