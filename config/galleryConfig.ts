@@ -32,7 +32,7 @@ export const galleryConfig: GallerySection[] = [
     slug: 'traditional',
     pieces: [
       {
-        src: '/images/gallery/traditional/Abby Figure Drawing Sketch - pencil on paper (Feb 2009).JPG',
+        src: '/images/gallery/traditional/Abby Figure Drawing Sketch - pencil on paper (Feb 2009).jpg',
         width: 1536,
         height: 2048,
         year: 2009,
@@ -41,7 +41,7 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["pencil on paper"]
       },
       {
-        src: "/images/gallery/traditional/The Controller (full) - oil pastel on paper (circa 2009).JPG",
+        src: "/images/gallery/traditional/The Controller (full) - oil pastel on paper (circa 2009).jpg",
         width: 2048,
         height: 1536,
         year: 2009,
@@ -50,7 +50,7 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["oil pastel"],
       },
       {
-        src: "/images/gallery/traditional/Basset Hound - acrylic painting on canvas (circa 2007).JPG",
+        src: "/images/gallery/traditional/Basset Hound - acrylic painting on canvas (circa 2007).jpg",
         width: 1280,
         height: 960,
         year: 2007,
@@ -68,7 +68,7 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["chalk on chalkboard"],
       },
       {
-        src: "/images/gallery/traditional/Bowling Alley Conversation (censored) - colored pencil on paper (circa 2008).JPG",
+        src: "/images/gallery/traditional/Bowling Alley Conversation (censored) - colored pencil on paper (circa 2008).jpg",
         width: 2048,
         height: 1536,
         year: 2008,
@@ -85,7 +85,7 @@ export const galleryConfig: GallerySection[] = [
         ],
       },
       {
-        src: "/images/gallery/traditional/Chiaroscuro Portrait - charcoal (2009).JPG",
+        src: "/images/gallery/traditional/Chiaroscuro Portrait - charcoal (2009).jpg",
         width: 1536,
         height: 2048,
         year: 2009,
@@ -94,7 +94,7 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["charcoal"],
       },
       {
-        src: "/images/gallery/traditional/Classmate Figure Drawing - charcoal on paper (circa 2009).JPG",
+        src: "/images/gallery/traditional/Classmate Figure Drawing - charcoal on paper (circa 2009).jpg",
         width: 1536,
         height: 2048,
         year: 2009,
@@ -103,7 +103,7 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["charcoal"],
       },
       {
-        src: "/images/gallery/traditional/Classmate Portrait - ink wash on paper (circa 2009).JPG",
+        src: "/images/gallery/traditional/Classmate Portrait - ink wash on paper (circa 2009).jpg",
         width: 1536,
         height: 2048,
         year: 2009,
@@ -153,7 +153,7 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["pencil on paper"],
       },
       {
-        src: "/images/gallery/traditional/Dachshund Diamond (censored) - pencil and colored pencil on paper (circa 2006).JPG",
+        src: "/images/gallery/traditional/Dachshund Diamond (censored) - pencil and colored pencil on paper (circa 2006).jpg",
         width: 1280,
         height: 960,
         year: 2006,
@@ -171,7 +171,7 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["pencil on lined paper"],
       },
       {
-        src: "/images/gallery/traditional/Driveway Fish collaboration (censored) - sidewalk chalk (June 2011).JPG",
+        src: "/images/gallery/traditional/Driveway Fish collaboration (censored) - sidewalk chalk (June 2011).jpg",
         width: 1944,
         height: 2592,
         year: 2011,
@@ -180,7 +180,7 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["sidewalk chalk"],
       },
       {
-        src: "/images/gallery/traditional/Ducky Still Life (censored) - pencil on paper (circa 2006).JPG",
+        src: "/images/gallery/traditional/Ducky Still Life (censored) - pencil on paper (circa 2006).jpg",
         width: 2048,
         height: 1536,
         year: 2006,
@@ -189,7 +189,7 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["pencil on paper"],
       },
       {
-        src: "/images/gallery/traditional/Earthy Still Life (censored) - chalk pastel on paper (circa 2009).JPG",
+        src: "/images/gallery/traditional/Earthy Still Life (censored) - chalk pastel on paper (circa 2009).jpg",
         width: 1536,
         height: 2048,
         year: 2009,
@@ -198,7 +198,7 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["chalk pastel on paper"],
       },
       {
-        src: "/images/gallery/traditional/Eleventh Grade Chiaroscuro Self Portrait (censored) - pencil on paper (2009).JPG",
+        src: "/images/gallery/traditional/Eleventh Grade Chiaroscuro Self Portrait (censored) - pencil on paper (2009).jpg",
         width: 1536,
         height: 2048,
         year: 2009,
@@ -207,7 +207,7 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["pencil on paper"],
       },
       {
-        src: "/images/gallery/traditional/Esplanades, Montpellier - ballpoint pen on paper (April 2013).jpg",
+        src: "/images/gallery/traditional/Esplanades Montpellier - ballpoint pen on paper (April 2013).jpg",
         width: 480,
         height: 640,
         year: 2013,
@@ -216,7 +216,7 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["ballpoint pen on paper"],
       },
       {
-        src: "/images/gallery/traditional/Gear - oil pastel on paper (circa 2009).JPG",
+        src: "/images/gallery/traditional/Gear - oil pastel on paper (circa 2009).jpg",
         width: 2048,
         height: 1536,
         year: 2009,
@@ -234,7 +234,7 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["pencil on paper"],
       },
       {
-        src: "/images/gallery/traditional/Golden Retriever Battle - colored pencil on paper (circa 2007).JPG",
+        src: "/images/gallery/traditional/Golden Retriever Battle - colored pencil on paper (circa 2007).jpg",
         width: 1280,
         height: 960,
         year: 2007,
@@ -243,7 +243,7 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["colored pencil on paper"],
       },
       {
-        src: "/images/gallery/traditional/Hairy Scary Tooth Fairy - water color and colored pencil (circa 2009).JPG",
+        src: "/images/gallery/traditional/Hairy Scary Tooth Fairy - water color and colored pencil (circa 2009).jpg",
         width: 1536,
         height: 2048,
         year: 2009,
@@ -260,7 +260,7 @@ export const galleryConfig: GallerySection[] = [
         ]
       },
       {
-        src: "/images/gallery/traditional/Hand-heart - pencil on paper (circa 2007).JPG",
+        src: "/images/gallery/traditional/Hand-heart - pencil on paper (circa 2007).jpg",
         width: 1280,
         height: 960,
         year: 2007,
@@ -329,7 +329,7 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["mulberry watercolor", "ballpoint pen"],
         referenceImages: [
           {
-            src: "/images/gallery/mixed-media/Andrew's Swing Dance Duet [reference] - mullbery watercolor and ballpoint pen on paper (June 2011).jpg",
+            src: "/images/gallery/mixed-media/Andrew's Swing Dance Duet (reference) - mullbery watercolor and ballpoint pen on paper (June 2011).jpg",
             width: 1944,
             height: 2592,
             alt: "photo of Andrew and his partner swing dancing at an event",
@@ -337,7 +337,7 @@ export const galleryConfig: GallerySection[] = [
         ],
         detailImages: [
           {
-            src: "/images/gallery/mixed-media/Andrew's Swing Dance Duet [paint] - mullbery watercolor and ballpoint pen on paper (June 2011).jpg",
+            src: "/images/gallery/mixed-media/Andrew's Swing Dance Duet (paint) - mullbery watercolor and ballpoint pen on paper (June 2011).jpg",
             width: 1944,
             height: 2592,
             alt: "personal summertime project reference image - paint only",
@@ -378,7 +378,7 @@ export const galleryConfig: GallerySection[] = [
         detailImages: [],
       },
       {
-        src: "/images/gallery/mixed-media/Heart Wings (self-portrait) - ballpoint pen on jean (circa 2012).JPG",
+        src: "/images/gallery/mixed-media/Heart Wings (self-portrait) - ballpoint pen on jean (circa 2012).jpg",
         width: 1536,
         height: 2048,
         year: 2012,
@@ -414,7 +414,7 @@ export const galleryConfig: GallerySection[] = [
         detailImages: [],
       },
       {
-        src: "/images/gallery/mixed-media/Pain Killers - soft block carving and colored pencil on paper (March 2009).JPG",
+        src: "/images/gallery/mixed-media/Pain Killers - soft block carving and colored pencil on paper (March 2009).jpg",
         width: 2048,
         height: 1536,
         year: 2009,
@@ -446,7 +446,7 @@ export const galleryConfig: GallerySection[] = [
         referenceImages: [],
         detailImages: [
           {
-            src: "/images/gallery/mixed-media/Trombone Table - acrylic paint on wood (Aug 2014).JPG",
+            src: "/images/gallery/mixed-media/Trombone Table - acrylic paint on wood (Aug 2014).jpg",
             width: 2592,
             height: 1944,
             alt: "full image of Trombone Table - acrylic paint on wood (Aug 2014)",
@@ -454,7 +454,7 @@ export const galleryConfig: GallerySection[] = [
         ],
       },
       {
-        src: "/images/gallery/mixed-media/Upcycled Wallet (censored) - computer parts (circa 2012).JPG",
+        src: "/images/gallery/mixed-media/Upcycled Wallet (censored) - computer parts (circa 2012).jpg",
         width: 640,
         height: 480,
         year: 2012,
