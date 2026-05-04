@@ -1,9 +1,11 @@
 import { ArtDetails } from "@/components/ArtDetails/ArtDetails";
 import { ArtFrame } from "../../components/ArtFrame/ArtFrame";
+import { GalleryAlbum } from "@/components/GalleryAlbum/GalleryAlbum";
+import { galleryConfig } from '../../config/galleryConfig';
 
 export default function Portfolio() {
   return (
-    <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 sm:items-start">
+    <main className="flex flex-1 w-full flex-col items-center justify-between py-32 px-16 sm:items-start">
       <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-emerald-200">
         Portfolio
       </h1>
@@ -21,6 +23,7 @@ export default function Portfolio() {
           Mixed Media
         </li>
       </ul>
+      <GalleryAlbum photos={galleryConfig[3].pieces} />
 
       <ArtFrame
         title="Original Bucket Head Sketch"
