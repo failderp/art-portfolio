@@ -1,11 +1,10 @@
-// "use client";
-// import { useEffect, useState } from "react";
+import Link from "next/link";
 import { ArtDetails } from "@/components/ArtDetails/ArtDetails";
 import { ArtFrame } from "../../components/ArtFrame/ArtFrame";
 import { Button } from "../../components/Button/Button";
-import { GalleryAlbum } from "../../components/GalleryAlbum/GalleryAlbum";
+import { GalleryClient } from "../../components/GalleryAlbum/GalleryClient";
+import { GalleryServer } from "../../components/GalleryAlbum/GalleryServer";
 import { galleryConfig } from "../../config/galleryConfig";
-import Link from "next/link";
 
 type PortfolioPageProps = {
   searchParams: Promise<{ gallery?: string }>;
@@ -13,20 +12,13 @@ type PortfolioPageProps = {
 
 export default async function Portfolio({ searchParams }: PortfolioPageProps) {
   const params = await searchParams;
-  const galleryParam = params.gallery;
-  console.log("Gallery param:", galleryParam);
-
-  const gallery =
-    typeof galleryParam === "string" ? galleryParam : galleryParam?.[0];
-
-  console.log("Selected gallery:", gallery);
-  console.log(
-    "available:",
-    galleryConfig.map((g) => g.name),
-  );
+  const galleryParam =
+    typeof params.gallery === "string" ? params.gallery : params.gallery?.[0];
 
   const selected =
-    galleryConfig.find((g) => g.slug.toLowerCase() === gallery?.toLowerCase()) ?? galleryConfig[0];
+    galleryConfig.find(
+      (g) => g.slug.toLowerCase() === galleryParam?.toLowerCase(),
+    ) ?? galleryConfig[0];
 
   return (
     <main className="flex flex-1 w-full flex-col items-center justify-between py-32 px-16 sm:items-start">
@@ -34,12 +26,12 @@ export default async function Portfolio({ searchParams }: PortfolioPageProps) {
         Portfolio
       </h1>
 
-      <ul className="flex">
+      <GalleryClient  galleries={galleryConfig} initialSlug={selected.slug} />
+
+      
+      {/* <ul className="flex">
         {galleryConfig.map((gallery) => (
-          <li
-            key={gallery.name}
-            className="m-2 text-lg leading-8 text-violet-300"
-          >
+          <li key={gallery.slug} className="m-2 text-lg leading-8 text-violet-300">
             <Link href={`?gallery=${gallery.slug}`} scroll={false}>
               {gallery.name}
             </Link>
@@ -47,7 +39,9 @@ export default async function Portfolio({ searchParams }: PortfolioPageProps) {
         ))}
       </ul>
 
-      <GalleryAlbum key={selected.name} photos={selected.pieces} />
+      {selected.pieces.length > 0 && (
+        <GalleryServer photos={selected.pieces} />
+      )} */}
 
       {/* <ArtFrame
         title="Original Bucket Head Sketch"
