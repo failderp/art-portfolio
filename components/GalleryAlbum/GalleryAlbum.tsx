@@ -10,7 +10,7 @@
  * you can download and run it locally
  */
 
-"use client";
+// "use client";
 import { useMemo } from "react";
 
 import Image from "next/image";
