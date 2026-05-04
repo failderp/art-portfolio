@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { RowsPhotoAlbum } from "react-photo-album";
-// import SSR from "react-photo-album/ssr";
+import SSR from "react-photo-album/ssr";
 import "react-photo-album/rows.css";
 import Link from "next/link";
 
@@ -29,7 +28,7 @@ export const GalleryClient = ({
 }) => {
   const selected =
     galleries.find((g) => g.slug === initialSlug) ?? galleries[0];
-    
+
   const albumPhotos = selected.pieces.map((p) => ({
     src: p.src,
     width: p.width,
@@ -53,8 +52,14 @@ export const GalleryClient = ({
         ))}
       </ul>
 
-      {albumPhotos.length > 0 && (
+      {/* {albumPhotos.length > 0 && (
         <RowsPhotoAlbum photos={albumPhotos} defaultContainerWidth={1200} />
+      )} */}
+
+      {albumPhotos.length > 0 && (
+        <SSR breakpoints={[300, 600, 900, 1200]}>
+          <RowsPhotoAlbum photos={albumPhotos} defaultContainerWidth={1200} />
+        </SSR>
       )}
     </>
   );
