@@ -5,8 +5,7 @@ import { Logo } from "../Logo/Logo";
 export const Navigation: React.FC = () => {
   return (
     <nav className="flex place-content-around items-center">
-      {/* <Logo /> */}
-      <ul className="flex gap-4 flex-wrap">
+=      <ul className="flex gap-4 flex-wrap">
         <li><Logo /></li>
         <li>
           <Link href="/" className="text-lg font-medium text-foreground">

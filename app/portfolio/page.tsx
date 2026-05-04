@@ -28,7 +28,7 @@ export default function Portfolio() {
       <ArtFrame
         title="Original Bucket Head Sketch"
         description="This is an example piece of art."
-        pathToImage="/images/logo/bucket head sketch (face only).jpg"
+        pathToImage="/images/logo/bucket head sketch (face only).JPG"
         width={478}
         height={465}
         mediums={["pencil on paper"]}

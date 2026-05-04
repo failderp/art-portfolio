@@ -7,7 +7,7 @@ export const Logo = () => {
     <Link href="/" className="flex items-center gap-2">
       <Image
         className="rounded-full p-10"
-        src="/images/bucket head sketch (face only).JPG"
+        src="/images/logo/bucket head sketch (face only).JPG"
         alt="failderp logo"
         width={478}
         height={465}
