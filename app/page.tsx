@@ -10,14 +10,14 @@ export default function Home() {
           <p className="max-w-md text-lg leading-8 text-violet-300">
             This is a conglomeration of projects ranging from{" "}
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+              href="/portfolio?gallery=traditional"
               className="font-medium text-white"
             >
               Traditional
             </a>{" "}
             to{" "}
             <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+              href="/portfolio?gallery=digital"
               className="font-medium text-white"
             >
               Digital
