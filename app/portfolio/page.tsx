@@ -25,8 +25,11 @@ export default async function Portfolio({ searchParams }: PortfolioPageProps) {
       <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-emerald-200">
         Portfolio
       </h1>
+
+      <GalleryClient  galleries={galleryConfig} initialSlug={selected.slug} />
+
       
-      <ul className="flex">
+      {/* <ul className="flex">
         {galleryConfig.map((gallery) => (
           <li key={gallery.slug} className="m-2 text-lg leading-8 text-violet-300">
             <Link href={`?gallery=${gallery.slug}`} scroll={false}>
@@ -38,7 +41,7 @@ export default async function Portfolio({ searchParams }: PortfolioPageProps) {
 
       {selected.pieces.length > 0 && (
         <GalleryServer photos={selected.pieces} />
-      )}
+      )} */}
 
       {/* <ArtFrame
         title="Original Bucket Head Sketch"

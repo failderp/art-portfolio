@@ -56,10 +56,20 @@ export const GalleryClient = ({
         <RowsPhotoAlbum photos={albumPhotos} defaultContainerWidth={1200} />
       )} */}
 
-      {albumPhotos.length > 0 && (
+      {/* {albumPhotos.length > 0 && (
         <SSR breakpoints={[300, 600, 900, 1200]}>
           <RowsPhotoAlbum photos={albumPhotos} defaultContainerWidth={1200} />
         </SSR>
+      )} */}
+
+      {albumPhotos.length > 0 && (
+        <div className="w-full">
+          <RowsPhotoAlbum
+            photos={albumPhotos}
+            defaultContainerWidth={1200}
+            breakpoints={[300, 600, 900, 1200]}
+          />
+        </div>
       )}
     </>
   );
