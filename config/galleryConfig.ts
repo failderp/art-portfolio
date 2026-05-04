@@ -25,7 +25,6 @@ type GallerySection = {
   pieces: GalleryPhoto[];
 };
 
-
 export const galleryConfig: GallerySection[] = [
   {
     name: "Traditional",
@@ -91,17 +90,6 @@ export const galleryConfig: GallerySection[] = [
             alt: "personal summertime project reference image - paint only",
           },
         ],
-      },
-      {
-        src: "/images/gallery/mixed-media/Armdoodle Emo - marker on skin (circa 2010).jpg",
-        width: 1280,
-        height: 1024,
-        year: 2010,
-        title: "Armdoodle Emo",
-        alt: "marker on skin (circa 2010)",
-        mediums: ["marker"],
-        referenceImages: [],
-        detailImages: [],
       },
       {
         src: "/images/gallery/mixed-media/Backpack Strap - ballpoint pen on masking tape (circa 2009).jpg",
@@ -209,10 +197,10 @@ export const galleryConfig: GallerySection[] = [
             width: 2592,
             height: 1944,
             alt: "full image of Trombone Table - acrylic paint on wood (Aug 2014)",
-          }
+          },
         ],
       },
-            {
+      {
         src: "/images/gallery/mixed-media/Upcycled Wallet (censored) - computer parts (circa 2012).JPG",
         width: 640,
         height: 480,
@@ -220,6 +208,17 @@ export const galleryConfig: GallerySection[] = [
         title: "Upcycled Wallet",
         alt: "computer parts (circa 2012)",
         mediums: ["computer parts", "photography"],
+        referenceImages: [],
+        detailImages: [],
+      },
+      {
+        src: "/images/gallery/mixed-media/Armdoodle Emo - marker on skin (circa 2010).jpg",
+        width: 1280,
+        height: 1024,
+        year: 2010,
+        title: "Armdoodle Emo",
+        alt: "marker on skin (circa 2010)",
+        mediums: ["marker"],
         referenceImages: [],
         detailImages: [],
       },
