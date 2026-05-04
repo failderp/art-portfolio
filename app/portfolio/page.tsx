@@ -1,9 +1,9 @@
-// "use client";
-// import { useEffect, useState } from "react";
+import Link from "next/link";
 import { ArtDetails } from "@/components/ArtDetails/ArtDetails";
 import { ArtFrame } from "../../components/ArtFrame/ArtFrame";
 import { Button } from "../../components/Button/Button";
 import { GalleryClient } from "../../components/GalleryAlbum/GalleryClient";
+import { GalleryServer } from "../../components/GalleryAlbum/GalleryServer";
 import { galleryConfig } from "../../config/galleryConfig";
 
 type PortfolioPageProps = {
@@ -26,7 +26,19 @@ export default async function Portfolio({ searchParams }: PortfolioPageProps) {
         Portfolio
       </h1>
       
-      <GalleryClient  galleries={galleryConfig} initialSlug={selected.slug} />
+      <ul className="flex">
+        {galleryConfig.map((gallery) => (
+          <li key={gallery.slug} className="m-2 text-lg leading-8 text-violet-300">
+            <Link href={`?gallery=${gallery.slug}`} scroll={false}>
+              {gallery.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      {selected.pieces.length > 0 && (
+        <GalleryServer photos={selected.pieces} />
+      )}
 
       {/* <ArtFrame
         title="Original Bucket Head Sketch"
