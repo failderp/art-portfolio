@@ -22,12 +22,14 @@ type GalleryPhoto = {
 
 type GallerySection = {
   name: string;
+  slug: string;
   pieces: GalleryPhoto[];
 };
 
 export const galleryConfig: GallerySection[] = [
   {
     name: "Traditional",
+    slug: 'traditional',
     pieces: [
       {
         src: '/images/gallery/traditional/Abby Figure Drawing Sketch - pencil on paper (Feb 2009).JPG',
@@ -270,6 +272,7 @@ export const galleryConfig: GallerySection[] = [
   },
   {
     name: "Digital",
+    slug: 'digital',
     pieces: [
       {
         src: "/images/gallery/digital/The Round Moon (recolor) - pencil on paper and digital recolor (Feb 2021).png",
@@ -284,10 +287,12 @@ export const galleryConfig: GallerySection[] = [
   },
   {
     name: "Doodles",
+    slug: 'doodles',
     pieces: [],
   },
   {
     name: "Mixed Media",
+    slug: 'mixed-media',
     pieces: [
       // {
       //   src: "/images/gallery/mixed-media/",
