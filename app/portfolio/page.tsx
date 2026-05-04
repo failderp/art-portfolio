@@ -11,21 +11,25 @@ export default function Portfolio() {
       </h1>
       <ul>
         <li className="text-lg leading-8 text-violet-300">
-          Doodles
+          Traditional Art
         </li>
         <li className="text-lg leading-8 text-violet-300">
           Digital Art
         </li>
         <li className="text-lg leading-8 text-violet-300">
-          Traditional Art
+          Doodles
         </li>
         <li className="text-lg leading-8 text-violet-300">
           Mixed Media
         </li>
       </ul>
+
+      <GalleryAlbum photos={galleryConfig[0].pieces} />
+      <GalleryAlbum photos={galleryConfig[1].pieces} />
+      <GalleryAlbum photos={galleryConfig[2].pieces} />
       <GalleryAlbum photos={galleryConfig[3].pieces} />
 
-      <ArtFrame
+      {/* <ArtFrame
         title="Original Bucket Head Sketch"
         description="This is an example piece of art."
         pathToImage="/images/logo/bucket head sketch (face only).JPG"
@@ -37,7 +41,7 @@ export default function Portfolio() {
         title="Original Bucket Head Sketch"
         description="This is an example piece of art."
         mediums={["pencil on paper"]}
-      />
+      /> */}
     </main>
   );
 }
