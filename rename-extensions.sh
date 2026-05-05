@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # TESTING
-# dir="public/images/gallery/doodles"
+# dir="public/images/gallery/mixed-media"
 
 # find "$dir" -maxdepth 1 -type f -name '*.jpg' -print0 |
 # while IFS= read -r -d '' old; do
@@ -13,14 +13,22 @@
 
 # RUNNING
 
-dir="public/images/gallery/doodles"
+dir="public/images/gallery/mixed-media"
 
 find "$dir" -maxdepth 1 -type f -name '*.jpg' -print0 |
 while IFS= read -r -d '' old; do
   tmp="${old}.__tmp_case_rename__"
-  new="${old%.jpg}.JPEG"
+  new="${old%.jpg}.jpg"
 
   # Two-step rename handles case-only changes on Windows filesystems
   git mv -- "$old" "$tmp"
   git mv -- "$tmp" "$new"
 done
+
+# dir="public/images/gallery/mixed-media"
+
+# find "$dir" -maxdepth 1 -type f -name '*.JPEG.jpg' -print0 |
+# while IFS= read -r -d '' old; do
+#   new="${old%.JPEG.jpg}.jpg"
+#   git mv -- "$old" "$new"
+# done
