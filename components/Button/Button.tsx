@@ -2,6 +2,7 @@ import styles from "./Button.module.css";
 
 interface Props {
   children: React.ReactNode;
+  className?: string;
   height?: string;
   width?: string;
   onClick?: () => void;
@@ -10,6 +11,7 @@ interface Props {
 
 export const Button: React.FC<Props> = ({
   children,
+  className = "",
   height,
   width,
   onClick,
@@ -17,7 +19,7 @@ export const Button: React.FC<Props> = ({
 }) => {
   return (
     <div className={styles.container}>
-      <button className={`${styles.button} ${styles["type" + type]}`} style={{ height, width }} onClick={onClick}>
+      <button className={`${styles.button} ${styles["type" + type]} ${className}`} style={{ height, width }} onClick={onClick}>
         <div className={styles.button__line}></div>
         <div className={styles.button__line}></div>
         <span className={styles.button__text}>{children}</span>
