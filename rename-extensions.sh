@@ -48,11 +48,11 @@
 
 dir="public/images/gallery/traditional"
 
-find "$dir" -maxdepth 1 -type f \( -name '*.jpg' -o -name '*.JPG' \) -print0 |
+find "$dir" -maxdepth 1 -type f \( -name '*.jpeg' -o -name '*.JPEG' \) -print0 |
 while IFS= read -r -d '' old; do
   base="${old%.*}"
   tmp="${base}.__tmp_case_rename__"
-  new="${base}.JPEG"
+  new="${base}.jpg"
 
   # Two-step rename avoids case-change issues on Windows filesystems
   git mv -- "$old" "$tmp"
