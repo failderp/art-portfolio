@@ -18,7 +18,7 @@ export default function About() {
             art supplies and encouragement to create. She has been doodling
             since she could hold a pencil and has been daydreaming since before
             she can ever remember. She has always been fascinated by the world
-            around her, and has always been drawn to making something out of
+            around her, and has forever been drawn to making something out of
             something else.
           </p>
 

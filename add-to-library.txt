@@ -1,0 +1,224 @@
+node - <<'NODE'
+const fs = require("fs");
+const path = require("path");
+
+const CONFIG_PATH = "config/galleryConfig.ts";
+const GALLERY_ROOT = "public/images/gallery";
+const DRY_RUN = process.argv.includes("--dry-run");
+
+const configText = fs.readFileSync(CONFIG_PATH, "utf8");
+
+const existingSrc = new Set(
+  Array.from(configText.matchAll(/"(\/images\/gallery\/[^"]+)"/g), (m) => m[1]),
+);
+
+function walk(dir) {
+  let out = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, entry.name);
+    if (entry.isDirectory()) out = out.concat(walk(p));
+    else out.push(p.replace(/\\/g, "/"));
+  }
+  return out;
+}
+
+function isImage(file) {
+  return /\.(jpg|jpeg|png)$/i.test(file);
+}
+
+function pngSize(buf) {
+  if (buf.toString("ascii", 1, 4) !== "PNG") return null;
+  return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
+}
+
+function jpgSize(buf) {
+  let i = 2;
+  while (i < buf.length) {
+    if (buf[i] !== 0xff) {
+      i++;
+      continue;
+    }
+    const marker = buf[i + 1];
+    const len = buf.readUInt16BE(i + 2);
+    const sof = new Set([0xc0, 0xc1, 0xc2, 0xc3, 0xc5, 0xc6, 0xc7, 0xc9, 0xca, 0xcb, 0xcd, 0xce, 0xcf]);
+    if (sof.has(marker)) {
+      return { height: buf.readUInt16BE(i + 5), width: buf.readUInt16BE(i + 7) };
+    }
+    i += 2 + len;
+  }
+  return null;
+}
+
+function imageSize(absPath) {
+  const buf = fs.readFileSync(absPath);
+  const ext = path.extname(absPath).toLowerCase();
+  if (ext === ".png") return pngSize(buf);
+  if (ext === ".jpg" || ext === ".jpeg") return jpgSize(buf);
+  return null;
+}
+
+function toTitleCase(s) {
+  return s
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(" ");
+}
+
+function parseNameMeta(fileNameNoExt) {
+  const parts = fileNameNoExt.split(" - ");
+  const rawTitle = (parts[0] || fileNameNoExt).trim();
+  const rawAlt = parts.slice(1).join(" - ").trim();
+
+  const cleanTitle = toTitleCase(
+    rawTitle
+      .replace(/\((censored|full|reference[^)]*|detail[^)]*|process[^)]*)\)/gi, "")
+      .replace(/\s+/g, " ")
+      .trim(),
+  );
+
+  const yearMatch = rawAlt.match(/\b(19|20)\d{2}\b/);
+  const year = yearMatch ? Number(yearMatch[0]) : undefined;
+
+  const mediumBase = rawAlt.replace(/\([^)]*\)/g, "").trim();
+  const mediums = mediumBase
+    ? mediumBase.split(/,| and /i).map((m) => m.trim()).filter(Boolean)
+    : [];
+
+  return {
+    title: cleanTitle || toTitleCase(rawTitle),
+    alt: rawAlt || undefined,
+    year,
+    mediums,
+  };
+}
+
+function escapeStr(s) {
+  return s.replace(/\\/g, "\\\\").replace(/"/g, '\\"');
+}
+
+function makeEntry(src, w, h) {
+  const base = path.basename(src).replace(/\.[^.]+$/, "");
+  const meta = parseNameMeta(base);
+
+  const lines = [];
+  lines.push("      {");
+  lines.push(`        src: "${escapeStr(src)}",`);
+  lines.push(`        width: ${w},`);
+  lines.push(`        height: ${h},`);
+  if (typeof meta.year === "number") lines.push(`        year: ${meta.year},`);
+  lines.push(`        title: "${escapeStr(meta.title)}",`);
+  if (meta.alt) lines.push(`        alt: "${escapeStr(meta.alt)}",`);
+  lines.push(`        mediums: [${meta.mediums.map((m) => `"${escapeStr(m)}"`).join(", ")}],`);
+  lines.push("      },");
+  return lines.join("\n");
+}
+
+function findMatchingBracket(text, openIdx) {
+  let depth = 0;
+  let inSingle = false;
+  let inDouble = false;
+  let inBack = false;
+  let escaped = false;
+
+  for (let i = openIdx; i < text.length; i++) {
+    const c = text[i];
+
+    if (escaped) {
+      escaped = false;
+      continue;
+    }
+
+    if (inSingle) {
+      if (c === "\\") escaped = true;
+      else if (c === "'") inSingle = false;
+      continue;
+    }
+    if (inDouble) {
+      if (c === "\\") escaped = true;
+      else if (c === '"') inDouble = false;
+      continue;
+    }
+    if (inBack) {
+      if (c === "\\") escaped = true;
+      else if (c === "`") inBack = false;
+      continue;
+    }
+
+    if (c === "'") inSingle = true;
+    else if (c === '"') inDouble = true;
+    else if (c === "`") inBack = true;
+    else if (c === "[") depth++;
+    else if (c === "]") {
+      depth--;
+      if (depth === 0) return i;
+    }
+  }
+  return -1;
+}
+
+function locatePiecesArray(text, slug) {
+  const slugRe = new RegExp(`slug:\\s*"${slug.replace(/[-/\\^$*+?.()|[\]{}]/g, "\\$&")}"`);
+  const slugMatch = slugRe.exec(text);
+  if (!slugMatch) return null;
+
+  const afterSlug = text.indexOf("pieces:", slugMatch.index);
+  if (afterSlug === -1) return null;
+
+  const openBracket = text.indexOf("[", afterSlug);
+  if (openBracket === -1) return null;
+
+  const closeBracket = findMatchingBracket(text, openBracket);
+  if (closeBracket === -1) return null;
+
+  return { openBracket, closeBracket };
+}
+
+const allFiles = walk(GALLERY_ROOT).filter(isImage);
+const missing = allFiles
+  .map((p) => "/" + p.replace(/^public\//, ""))
+  .filter((src) => !existingSrc.has(src));
+
+const bySection = new Map();
+for (const src of missing) {
+  const parts = src.split("/");
+  const section = parts[3];
+  if (!bySection.has(section)) bySection.set(section, []);
+  bySection.get(section).push(src);
+}
+
+let updated = configText;
+const insertedCounts = {};
+const skippedSections = {};
+
+for (const [section, srcList] of bySection.entries()) {
+  const loc = locatePiecesArray(updated, section);
+  if (!loc) {
+    skippedSections[section] = srcList.length;
+    continue;
+  }
+
+  const entries = [];
+  for (const src of srcList) {
+    const abs = src.replace(/^\//, "public/");
+    const size = imageSize(abs) || { width: 1200, height: 1200 };
+    entries.push(makeEntry(src, size.width, size.height));
+  }
+
+  const insertText = "\n" + entries.join("\n") + "\n    ";
+  updated = updated.slice(0, loc.closeBracket) + insertText + updated.slice(loc.closeBracket);
+  insertedCounts[section] = entries.length;
+}
+
+console.log("Generated new entries by section:", insertedCounts);
+if (Object.keys(skippedSections).length) {
+  console.log("Skipped (no matching section slug in config):", skippedSections);
+}
+
+if (DRY_RUN) {
+  console.log("Dry run only. No file was written.");
+} else {
+  fs.writeFileSync(CONFIG_PATH, updated, "utf8");
+  console.log("Updated", CONFIG_PATH);
+}
+NODE
