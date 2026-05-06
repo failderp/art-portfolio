@@ -1,11 +1,10 @@
 "use client";
 
 import { RowsPhotoAlbum } from "react-photo-album";
-import SSR from "react-photo-album/ssr";
 import "react-photo-album/rows.css";
 import Link from "next/link";
 
-type GalleryPhoto = {
+export type GalleryPhoto = {
   src: string;
   width: number;
   height: number;
@@ -22,9 +21,11 @@ type GallerySection = {
 export const GalleryClient = ({
   galleries,
   initialSlug,
+  onImageClick,
 }: {
   galleries: GallerySection[];
   initialSlug: string;
+  onImageClick?: (piece: any) => void;
 }) => {
   const selected =
     galleries.find((g) => g.slug === initialSlug) ?? galleries[0];
@@ -66,6 +67,11 @@ export const GalleryClient = ({
         <div className="w-full">
           <RowsPhotoAlbum
             photos={albumPhotos}
+            onClick={({ index }) => {
+              if (onImageClick && selected.pieces[index]) {
+                onImageClick(selected.pieces[index]);
+              }
+            }}
             defaultContainerWidth={1200}
             breakpoints={[300, 600, 900, 1200]}
           />

@@ -1,9 +1,4 @@
-import Link from "next/link";
-import { ArtDetails } from "@/components/ArtDetails/ArtDetails";
-import { ArtFrame } from "../../components/ArtFrame/ArtFrame";
-import { Button } from "../../components/Button/Button";
-import { GalleryClient } from "../../components/GalleryAlbum/GalleryClient";
-import { GalleryServer } from "../../components/GalleryAlbum/GalleryServer";
+import { PortfolioGallery } from "../../components/PortfolioGallery/PortfolioGallery";
 import { galleryConfig } from "../../config/galleryConfig";
 
 type PortfolioPageProps = {
@@ -26,7 +21,7 @@ export default async function Portfolio({ searchParams }: PortfolioPageProps) {
         Portfolio
       </h1>
 
-      <GalleryClient  galleries={galleryConfig} initialSlug={selected.slug} />
+      <PortfolioGallery galleries={galleryConfig} initialSlug={selected.slug} />
 
       
       {/* <ul className="flex">
