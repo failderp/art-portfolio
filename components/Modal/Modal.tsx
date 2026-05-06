@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { GalleryPhoto } from "../GalleryAlbum/GalleryClient";
+import type { GalleryPhoto } from "../../config/galleryConfig";
 import { Badge } from "../Badge/Badge";
 
 export const Modal = ({
@@ -13,7 +13,6 @@ export const Modal = ({
   isOpen: boolean;
   onClose: () => void;
 }) => {
-  console.log("modal piece", piece);
 
   if (!isOpen || !piece) return null;
 
@@ -42,7 +41,7 @@ export const Modal = ({
 
           <Image
             src={piece.src}
-            alt={piece.alt || piece.title}
+            alt={piece.alt || piece.title || "artwork"}
             width={500}
             height={500}
             className="w-full h-auto mb-5"

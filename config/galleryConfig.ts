@@ -1,4 +1,4 @@
-type GalleryPhoto = {
+export type GalleryPhoto = {
   src: string;
   width: number;
   height: number;
@@ -20,7 +20,7 @@ type GalleryPhoto = {
   }[];
 };
 
-type GallerySection = {
+export type GallerySection = {
   name: string;
   slug: string;
   pieces: GalleryPhoto[];

@@ -1,22 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
-import Link from "next/link";
-
-export type GalleryPhoto = {
-  src: string;
-  width: number;
-  height: number;
-  alt?: string;
-  title?: string;
-};
-
-type GallerySection = {
-  name: string;
-  slug: string;
-  pieces: GalleryPhoto[];
-};
+import type { GalleryPhoto, GallerySection } from "../../config/galleryConfig";
 
 export const GalleryClient = ({
   galleries,
@@ -25,7 +12,7 @@ export const GalleryClient = ({
 }: {
   galleries: GallerySection[];
   initialSlug: string;
-  onImageClick?: (piece: any) => void;
+  onImageClick?: (piece: GalleryPhoto) => void;
 }) => {
   const selected =
     galleries.find((g) => g.slug === initialSlug) ?? galleries[0];
