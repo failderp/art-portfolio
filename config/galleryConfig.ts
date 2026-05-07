@@ -191,29 +191,29 @@ export const galleryConfig: GallerySection[] = [
         alt: "ink wash on paper (circa 2009)",
         mediums: ["ink wash"],
       },
-      {
-        src: "/images/gallery/traditional/Concept Sketch of Kip from The Nest Archive (Erik Perez) - pencil on paper (April 2026).jpg",
-        width: 3072,
-        height: 4096,
-        year: 2026,
-        title: "Concept Sketch of Kip from The Nest Archive (Erik Perez)",
-        alt: "pencil on paper (April 2026)",
-        mediums: ["graphite"],
-        referenceImages: [
-          {
-            src: "/images/gallery/traditional/Concept Sketch of Kip (reference 1) from The Nest Archive (Erik Perez) - pencil on paper (April 2026).png",
-            width: 2726,
-            height: 4096,
-            alt: "reference image for Concept Sketch of Kip from The Nest Archive (Erik Perez) - pencil on paper (April 2026)",
-          },
-          {
-            src: "/images/gallery/traditional/Concept Sketch of Kip (reference 2) from The Nest Archive (Erik Perez) - pencil on paper (April 2026).png",
-            width: 1600,
-            height: 1600,
-            alt: "reference image for Concept Sketch of Kip from The Nest Archive (Erik Perez) - pencil on paper (April 2026)",
-          },
-        ],
-      },
+      // {
+      //   src: "/images/gallery/traditional/Concept Sketch of Kip from The Nest Archive (Erik Perez) - pencil on paper (April 2026).jpg",
+      //   width: 3072,
+      //   height: 4096,
+      //   year: 2026,
+      //   title: "Concept Sketch of Kip from The Nest Archive (Erik Perez)",
+      //   alt: "pencil on paper (April 2026)",
+      //   mediums: ["graphite"],
+      //   referenceImages: [
+      //     {
+      //       src: "/images/gallery/traditional/Concept Sketch of Kip (reference 1) from The Nest Archive (Erik Perez) - pencil on paper (April 2026).png",
+      //       width: 2726,
+      //       height: 4096,
+      //       alt: "reference image for Concept Sketch of Kip from The Nest Archive (Erik Perez) - pencil on paper (April 2026)",
+      //     },
+      //     {
+      //       src: "/images/gallery/traditional/Concept Sketch of Kip (reference 2) from The Nest Archive (Erik Perez) - pencil on paper (April 2026).png",
+      //       width: 1600,
+      //       height: 1600,
+      //       alt: "reference image for Concept Sketch of Kip from The Nest Archive (Erik Perez) - pencil on paper (April 2026)",
+      //     },
+      //   ],
+      // },
       {
         src: "/images/gallery/traditional/Corkboard Mirror Self Portrait - pencil on paper (Jan 2012).jpg",
         width: 3072,
