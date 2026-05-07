@@ -38,7 +38,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2009,
         title: "Abby Figure Drawing Sketch",
         alt: "pencil on paper (Feb 2009)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/The Controller (full) - oil pastel on paper (circa 2009).jpg",
@@ -74,7 +74,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2008,
         title: "Bowling Alley Conversation",
         alt: "colored pencil on paper (circa 2008)",
-        mediums: ["colored pencil on paper"],
+        mediums: ["colored pencil"],
         referenceImages: [
           {
             src: "/images/gallery/traditional/Bowling Alley Conversation (reference) - colored pencil on paper (circa 2008).jpg",
@@ -118,7 +118,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2026,
         title: "Concept Sketch of Kip from The Nest Archive (Erik Perez)",
         alt: "pencil on paper (April 2026)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
         referenceImages: [
           {
             src: "/images/gallery/traditional/Concept Sketch of Kip (reference 1) from The Nest Archive (Erik Perez) - pencil on paper (April 2026).png",
@@ -141,7 +141,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2012,
         title: "Corkboard Mirror Self Portrait",
         alt: "pencil on paper (Jan 2012)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/Cresting Angel - pencil on paper (Feb 2020).jpg",
@@ -150,7 +150,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2020,
         title: "Cresting Angel",
         alt: "pencil on paper (Feb 2020)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/Dachshund Diamond (censored) - pencil and colored pencil on paper (circa 2006).jpg",
@@ -159,7 +159,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2006,
         title: "Dachshund Diamond",
         alt: "pencil and colored pencil on paper (circa 2006)",
-        mediums: ["pencil", "colored pencil on paper"],
+        mediums: ["pencil", "colored pencil"],
       },
       {
         src: "/images/gallery/traditional/Dorm Room Drunk - pencil on lined paper (circa 2010).jpg",
@@ -168,14 +168,14 @@ export const galleryConfig: GallerySection[] = [
         year: 2010,
         title: "Dorm Room Drunk",
         alt: "pencil on lined paper (circa 2010)",
-        mediums: ["pencil on lined paper"],
+        mediums: ["graphite"],
       },
       {
-        src: "/images/gallery/traditional/Driveway Fish collaboration (censored) - sidewalk chalk (June 2011).jpg",
+        src: "/images/gallery/traditional/Driveway Fish - sidewalk chalk (June 2011).jpg",
         width: 1944,
         height: 2592,
         year: 2011,
-        title: "Driveway Fish collaboration",
+        title: "Driveway Fish",
         alt: "sidewalk chalk (June 2011)",
         mediums: ["sidewalk chalk"],
       },
@@ -186,7 +186,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2006,
         title: "Ducky Still Life",
         alt: "pencil on paper (circa 2006)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/Earthy Still Life (censored) - chalk pastel on paper (circa 2009).jpg",
@@ -195,7 +195,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2009,
         title: "Earthy Still Life",
         alt: "chalk pastel on paper (circa 2009)",
-        mediums: ["chalk pastel on paper"],
+        mediums: ["chalk pastel"],
       },
       {
         src: "/images/gallery/traditional/Esplanades Montpellier - ballpoint pen on paper (April 2013).jpg",
@@ -204,7 +204,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2013,
         title: "Esplanades, Montpellier",
         alt: "ballpoint pen on paper (April 2013)",
-        mediums: ["ballpoint pen on paper"],
+        mediums: ["ballpoint pen"],
       },
       {
         src: "/images/gallery/traditional/Gear - oil pastel on paper (circa 2009).jpg",
@@ -213,7 +213,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2009,
         title: "Gear",
         alt: "oil pastel on paper (circa 2009)",
-        mediums: ["oil pastel on paper"],
+        mediums: ["oil pastel"],
       },
       {
         src: "/images/gallery/traditional/Golden Retriever Battle - colored pencil on paper (circa 2007).jpg",
@@ -222,7 +222,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2007,
         title: "Golden Retriever Battle",
         alt: "colored pencil on paper (circa 2007)",
-        mediums: ["colored pencil on paper"],
+        mediums: ["colored pencil"],
       },
       {
         src: "/images/gallery/traditional/Hairy Scary Tooth Fairy - water color and colored pencil (circa 2009).jpg",
@@ -248,7 +248,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2007,
         title: "Hand-heart",
         alt: "pencil on paper (circa 2007)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/hanging off a couch - pencil on lined paper (circa 2007).jpg",
@@ -257,7 +257,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2007,
         title: "Hanging off a Couch",
         alt: "pencil on lined paper (circa 2007)",
-        mediums: ["pencil on lined paper"],
+        mediums: ["graphite"],
         referenceImages: [
           {
             src: "/images/gallery/traditional/hanging off a couch (reference 1) - pencil on lined paper (circa 2007).jpg",
@@ -296,7 +296,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2020,
         title: "Andre Eye",
         alt: "pencil (May 2020)",
-        mediums: ["pencil"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/Andre lawn chair - pencil (May 2020).jpg",
@@ -305,7 +305,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2020,
         title: "Andre Lawn Chair",
         alt: "pencil (May 2020)",
-        mediums: ["pencil"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/Apple - watercolor.jpg",
@@ -330,7 +330,7 @@ export const galleryConfig: GallerySection[] = [
         height: 4096,
         title: "Bee",
         alt: "pencil",
-        mediums: ["pencil"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/carnival - colored pencil.jpg",
@@ -355,7 +355,7 @@ export const galleryConfig: GallerySection[] = [
         height: 4096,
         title: "Fingers Crossed",
         alt: "pencil",
-        mediums: ["pencil"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/Hawaiian Hitchhiker - pencil (Sept 2011).jpg",
@@ -364,7 +364,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2011,
         title: "Hawaiian Hitchhiker",
         alt: "pencil (Sept 2011)",
-        mediums: ["pencil"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/Jimmy Jawn Portrait from Memory - pencil on lined paper (circa 2007).jpg",
@@ -373,7 +373,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2007,
         title: "Jimmy Jawn Portrait From Memory",
         alt: "pencil on lined paper (circa 2007)",
-        mediums: ["pencil on lined paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/Judith Portrait from photo - ballpoint pen on paper (Feb 2013).jpg",
@@ -382,7 +382,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2013,
         title: "Judith Portrait From Photo",
         alt: "ballpoint pen on paper (Feb 2013)",
-        mediums: ["ballpoint pen on paper"],
+        mediums: ["ballpoint pen"],
         referenceImages: [
           {
             src: "/images/gallery/traditional/Judith Portrait from photo (reference) - ballpoint pen on paper (Feb 2013).jpg",
@@ -399,7 +399,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2009,
         title: "Kitchen Still Life",
         alt: "charcoal on paper (circa 2009)",
-        mediums: ["charcoal on paper"],
+        mediums: ["charcoal"],
       },
       {
         src: "/images/gallery/traditional/Little Me Ballerina - water color on paper (circa 2009).jpg",
@@ -408,7 +408,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2009,
         title: "Little Me Ballerina",
         alt: "water color on paper (circa 2009)",
-        mediums: ["water color on paper"],
+        mediums: ["water color"],
       },
       {
         src: "/images/gallery/traditional/Mango Shaped Space Still Life - pencil on paper (circa 2009).jpg",
@@ -417,7 +417,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2009,
         title: "Mango Shaped Space Still Life",
         alt: "pencil on paper (circa 2009)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/Me and Kate Portrait (censored) - oil pastel on paper (circa 2006).jpg",
@@ -426,7 +426,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2006,
         title: "Me And Kate Portrait",
         alt: "oil pastel on paper (circa 2006)",
-        mediums: ["oil pastel on paper"],
+        mediums: ["oil pastel"],
         referenceImages: [
           {
             src: "/images/gallery/traditional/Me and Kate Portrait (reference) - oil pastel on paper (circa 2006).jpg",
@@ -443,7 +443,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2009,
         title: "Eleventh Grade Chiaroscuro Self Portrait",
         alt: "pencil on paper (2009)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/Mirrors Self Portrait (censored) - water color on paper possibly (circa 2009).jpg",
@@ -452,7 +452,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2009,
         title: "Mirrors Self Portrait",
         alt: "water color on paper possibly (circa 2009)",
-        mediums: ["water color on paper possibly"],
+        mediums: ["water color possibly"],
       },
       {
         src: "/images/gallery/traditional/No dawn, no day. I'm always in this twilight - watercolor (circa 2021).jpg",
@@ -464,13 +464,13 @@ export const galleryConfig: GallerySection[] = [
         mediums: ["watercolor"],
       },
       {
-        src: "/images/gallery/traditional/Playful Red Panda (censored) - pencil (March 2019).JPG",
+        src: "/images/gallery/traditional/Red Panda (censored) - pencil (March 2019).JPG",
         width: 3072,
         height: 4096,
         year: 2019,
-        title: "Playful Red Panda",
+        title: "Red Panda",
         alt: "pencil (March 2019)",
-        mediums: ["pencil"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/Pointillism (censored) - stippling pen on paper (circa 2006).jpg",
@@ -479,7 +479,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2006,
         title: "Pointillism",
         alt: "stippling pen on paper (circa 2006)",
-        mediums: ["stippling pen on paper"],
+        mediums: ["stippling pen"],
       },
       {
         src: "/images/gallery/traditional/Purple Zebra - marker and colored pencil on paper (circa 2007).jpg",
@@ -488,7 +488,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2007,
         title: "Purple Zebra",
         alt: "marker and colored pencil on paper (circa 2007)",
-        mediums: ["marker", "colored pencil on paper"],
+        mediums: ["marker", "colored pencil"],
       },
       {
         src: "/images/gallery/traditional/sad goblin - pencil (Aug 2021).jpg",
@@ -497,7 +497,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2021,
         title: "Sad Goblin",
         alt: "pencil (Aug 2021)",
-        mediums: ["pencil"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/Self Portrait - pencil on paper (circa 2007).jpg",
@@ -506,7 +506,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2007,
         title: "Self Portrait",
         alt: "pencil on paper (circa 2007)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/Shame - colored pencil, pen (Nov 2019).jpg",
@@ -541,7 +541,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2026,
         title: "Sunflower Girl",
         alt: "pencil on paper (March 2026)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/Toothbrush still life (censored) - pencil on paper (circa 2006).jpg",
@@ -550,7 +550,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2006,
         title: "Toothbrush Still Life",
         alt: "pencil on paper (circa 2006)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/traditional/X-Ray Dog - pencil on paper (circa 2006).jpg",
@@ -559,7 +559,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2006,
         title: "X-Ray Dog",
         alt: "pencil on paper (circa 2006)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
         referenceImages: [
           {
             src: "/images/gallery/traditional/X-Ray Dog (reference) - pencil on paper (circa 2006).png",
@@ -582,7 +582,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2021,
         title: "The Round Moon (recolor)",
         alt: "pencil on paper and digital recolor (Feb 2021)",
-        mediums: ["pencil on paper", "digital recolor"],
+        mediums: ["pencil", "digital recolor"],
         detailImages: [
           {
             src: "/images/gallery/traditional/The Round Moon (process 1 structure) - pencil on paper and digital recolor (Feb 2021).jpg",
@@ -700,7 +700,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2006,
         title: "Abby Figure Drawing",
         alt: "purple crayon on paper (circa 2006)",
-        mediums: ["purple crayon on paper"],
+        mediums: ["purple crayon"],
       },
       {
         src: "/images/gallery/doodles/Dragon Portrait of Dad - pen and crayon on paper (June 2012).jpg",
@@ -709,7 +709,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2012,
         title: "Dragon Portrait Of Dad",
         alt: "pen and crayon on paper (June 2012)",
-        mediums: ["pen", "crayon on paper"],
+        mediums: ["pen", "crayon"],
       },
       {
         src: "/images/gallery/doodles/Yeonmi Park North Korean Escapist as Dva Overwatch (color) - ballpoint pen and pencil on paper (June 2020).jpg",
@@ -718,7 +718,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2020,
         title: "Yeonmi Park North Korean Escapist As Dva Overwatch (color)",
         alt: "ballpoint pen and pencil on paper (June 2020)",
-        mediums: ["ballpoint pen", "pencil on paper"],
+        mediums: ["ballpoint pen", "pencil"],
         detailImages: [
           {
             src: "/images/gallery/doodles/Yeonmi Park North Korean Escapist as Dva Overwatch - ballpoint pen and pencil on paper (June 2020).jpg",
@@ -735,7 +735,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2021,
         title: "Yes But",
         alt: "pencil (July 2021)",
-        mediums: ["pencil"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/doodles/Bowl Concepts - pencil on paper (circa 2010).jpg",
@@ -744,7 +744,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2010,
         title: "Bowl Concepts",
         alt: "pencil on paper (circa 2010)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/doodles/Chicken in a Banana Suit (censored) - ballpoint pen on paper (June 2023).jpg",
@@ -753,7 +753,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2023,
         title: "Chicken In A Banana Suit",
         alt: "ballpoint pen on paper (June 2023)",
-        mediums: ["ballpoint pen on paper"],
+        mediums: ["ballpoint pen"],
       },
       {
         src: "/images/gallery/doodles/Death of a Salesman Doodle - pencil on paper (circa 2010).jpg",
@@ -762,7 +762,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2010,
         title: "Death Of A Salesman Doodle",
         alt: "pencil on paper (circa 2010)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/doodles/Denmark Self Portrait (unfinished) from photo - pencil on paper (circa 2012).jpg",
@@ -771,7 +771,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2012,
         title: "Denmark Self Portrait (unfinished) From Photo",
         alt: "pencil on paper (circa 2012)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
         referenceImages: [
           {
             src: "/images/gallery/doodles/Denmark Self Portrait (reference) from photo - pencil on paper (circa 2012).jpg",
@@ -788,7 +788,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2013,
         title: "Dragon Head Sketch",
         alt: "ballpoint pen on paper (April 2013)",
-        mediums: ["ballpoint pen on paper"],
+        mediums: ["ballpoint pen"],
       },
       {
         src: "/images/gallery/doodles/Eye sketch (unfinished) - ballpoint pen on paper (April 2012).jpg",
@@ -797,7 +797,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2012,
         title: "Eye Sketch (unfinished)",
         alt: "ballpoint pen on paper (April 2012)",
-        mediums: ["ballpoint pen on paper"],
+        mediums: ["ballpoint pen"],
       },
       {
         src: "/images/gallery/doodles/Fire-Breathing Dragon (full, censored) - ballpoint pen on paper (circa 2010).jpg",
@@ -806,7 +806,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2010,
         title: "Fire-Breathing Dragon (full, Censored)",
         alt: "ballpoint pen on paper (circa 2010)",
-        mediums: ["ballpoint pen on paper"],
+        mediums: ["ballpoint pen"],
         detailImages: [
           {
             src: "/images/gallery/doodles/Fire-Breathing Dragon (dragon detail) - ballpoint pen on paper (circa 2010).jpg",
@@ -845,7 +845,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2012,
         title: "Gigi Portrait From Memory",
         alt: "pencil on paper (March 2012)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/doodles/Giraffe and Camel Thorn Tree Doodle - ballpoint pen on paper (March 2010).jpg",
@@ -854,7 +854,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2010,
         title: "Giraffe And Camel Thorn Tree Doodle",
         alt: "ballpoint pen on paper (March 2010)",
-        mediums: ["ballpoint pen on paper"],
+        mediums: ["ballpoint pen"],
       },
       {
         src: "/images/gallery/doodles/Giraffe Mug Concept - pencil on paper (circa 2010).jpg",
@@ -863,7 +863,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2010,
         title: "Giraffe Mug Concept",
         alt: "pencil on paper (circa 2010)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/doodles/Giraffe Nerd Doodle - pencil on lined paper (circa 2010).jpg",
@@ -872,7 +872,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2010,
         title: "Giraffe Nerd Doodle",
         alt: "pencil on lined paper (circa 2010)",
-        mediums: ["pencil on lined paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/doodles/je suis le roi - pencil.jpg",
@@ -880,7 +880,7 @@ export const galleryConfig: GallerySection[] = [
         height: 4096,
         title: "Je Suis Le Roi",
         alt: "pencil",
-        mediums: ["pencil"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/doodles/Keith Portrait - ballpoint pen on paper (circa 2014).jpg",
@@ -889,7 +889,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2014,
         title: "Keith Portrait",
         alt: "ballpoint pen on paper (circa 2014)",
-        mediums: ["ballpoint pen on paper"],
+        mediums: ["ballpoint pen"],
       },
       {
         src: "/images/gallery/doodles/Man-Eating Broccoli Doodle - ballpoint pen on brown paper bag (circa 2010).jpg",
@@ -914,7 +914,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2014,
         title: "No-faced Drunk",
         alt: "ballpoint pen on paper (circa 2014)",
-        mediums: ["ballpoint pen on paper"],
+        mediums: ["ballpoint pen"],
       },
       {
         src: "/images/gallery/doodles/Pit Bull Bowl Concept Doodle - pencil on paper (circa 2010).jpg",
@@ -923,7 +923,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2010,
         title: "Pit Bull Bowl Concept Doodle",
         alt: "pencil on paper (circa 2010)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/doodles/Pit Bull Doodle - pencil on paper (circa 2010).jpg",
@@ -932,7 +932,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2010,
         title: "Pit Bull Doodle",
         alt: "pencil on paper (circa 2010)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/doodles/Still Life Doodle - pencil on paper (circa 2010).jpg",
@@ -941,7 +941,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2010,
         title: "Still Life Doodle",
         alt: "pencil on paper (circa 2010)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/doodles/Suki sketch - pencil.jpg",
@@ -949,7 +949,7 @@ export const galleryConfig: GallerySection[] = [
         height: 4096,
         title: "Suki Sketch",
         alt: "pencil",
-        mediums: ["pencil"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/doodles/Sulking Korean-American - charcoal on paper (Oct 2010).jpg",
@@ -958,7 +958,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2010,
         title: "Sulking Korean-American",
         alt: "charcoal on paper (Oct 2010)",
-        mediums: ["charcoal on paper"],
+        mediums: ["charcoal"],
       },
       {
         src: "/images/gallery/doodles/Teen Titans Raven's Internal World - ballpoint pen on paper (Nov 2013).jpg",
@@ -967,7 +967,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2013,
         title: "Teen Titans Raven's Internal World",
         alt: "ballpoint pen on paper (Nov 2013)",
-        mediums: ["ballpoint pen on paper"],
+        mediums: ["ballpoint pen"],
       },
       {
         src: "/images/gallery/doodles/Ten Thousand Fists by Disturbed - pen on lined paper.jpg",
@@ -984,7 +984,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2010,
         title: "Tipping Robot Wake-Up-And-Doodle",
         alt: "pencil on paper (March 2010)",
-        mediums: ["pencil on paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/doodles/Turtle-fly (censored) - ballpoint pen on paper (June 2023).jpg",
@@ -993,7 +993,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2023,
         title: "Turtle-fly",
         alt: "ballpoint pen on paper (June 2023)",
-        mediums: ["ballpoint pen on paper"],
+        mediums: ["ballpoint pen"],
       },
       {
         src: "/images/gallery/doodles/Unicycle Clown (unfinished) - charcoal on paper (circa 2010).jpg",
@@ -1002,7 +1002,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2010,
         title: "Unicycle Clown (unfinished)",
         alt: "charcoal on paper (circa 2010)",
-        mediums: ["charcoal on paper"],
+        mediums: ["charcoal"],
       },
       {
         src: "/images/gallery/doodles/Foreshortened Fist  for MOMA Trip - pencil on lined paper (circa 2010).jpg",
@@ -1011,7 +1011,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2010,
         title: "Foreshortened Fist For MOMA Trip",
         alt: "pencil on lined paper (circa 2010)",
-        mediums: ["pencil on lined paper"],
+        mediums: ["graphite"],
       },
       {
         src: "/images/gallery/doodles/Angel Doodle - ballpoint pen on paper (May 2012).jpg",
@@ -1020,7 +1020,7 @@ export const galleryConfig: GallerySection[] = [
         year: 2012,
         title: "Angel Doodle",
         alt: "ballpoint pen on paper (May 2012)",
-        mediums: ["ballpoint pen on paper"],
+        mediums: ["ballpoint pen"],
       },
       {
         src: "/images/gallery/doodles/Angry Korean-American Saxophonist Doodle - charcoal on lined paper (circa 2010).jpg",
