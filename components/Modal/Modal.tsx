@@ -23,7 +23,7 @@ export const Modal = ({
     >
       <div
         role="alert"
-        className="container mx-auto w-11/12 md:w-2/3 max-w-lg"
+        className="container mx-auto w-11/12 md:w-2/3 max-w-xl"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="relative py-8 px-5 md:px-10 bg-mauve-300 shadow-md rounded border border-gray-400 max-h-[85vh] overflow-y-auto">
